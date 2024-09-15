@@ -23,67 +23,81 @@ function HeroSection() {
       <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
-            Hello, <br />
-            This is {' '}
-            <span className=" text-pink-500">{personalData.name}</span>
+            Deepak Mittal <br />
+            {/* This is {' '} */}
+            {/* <span className=" text-pink-500">{personalData.name}</span>
             {` , I'm a Professional `}
             <span className=" text-[#16f2b3]">{personalData.designation}</span>
-            .
+            . */}
           </h1>
+          <h2 className="mt-1 text-xl">Professional Software Developer</h2>
+
+          <h6 className="mt-3">
+            A skilled software developer with expertise in building scalable and
+            user-friendly applications across web, mobile, and cloud platforms.
+            I am committed to delivering innovative and high-quality solutions
+            that <span className="text-[#16f2b3]">drive business success</span>.
+          </h6>
 
           <div className="my-12 flex items-center gap-5">
             <Link
               href={personalData.github}
-              target='_blank'
+              target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <BsGithub size={30} />
             </Link>
             <Link
               href={personalData.linkedIn}
-              target='_blank'
+              target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <BsLinkedin size={30} />
             </Link>
             <Link
               href={personalData.facebook}
-              target='_blank'
+              target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <FaFacebook size={30} />
             </Link>
-            <Link
+            {/* <Link
               href={personalData.leetcode}
-              target='_blank'
+              target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <SiLeetcode size={30} />
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               href={personalData.twitter}
-              target='_blank'
+              target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <FaTwitterSquare size={30} />
-            </Link>
+            </Link> */}
           </div>
 
           <div className="flex items-center gap-3">
-            <Link href="#contact" className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
+            <Link
+              href="#contact"
+              className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
+            >
               <button className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
                 <span>Contact me</span>
                 <RiContactsFill size={16} />
               </button>
             </Link>
 
-            <Link className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href={personalData.resume}
+            <Link
+              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+              role="button"
+              target="_blank"
+              href={personalData.resume}
             >
               <span>Get Resume</span>
               <MdDownload size={16} />
             </Link>
           </div>
-
         </div>
         <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
           <div className="flex flex-row">
@@ -101,87 +115,81 @@ function HeroSection() {
             <code className="font-mono text-xs md:text-sm lg:text-base">
               <div className="blink">
                 <span className="mr-2 text-pink-500">const</span>
-                <span className="mr-2 text-white">coder</span>
+                <span className="mr-2 text-white">developerProfile</span>
                 <span className="mr-2 text-pink-500">=</span>
-                <span className="text-gray-400">{'{'}</span>
+                <span className="text-gray-400">{"{"}</span>
               </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
+
+              {/* Name */}
+              <div className="ml-4 lg:ml-8">
+                <span className="mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Abu Said</span>
+                <span className="text-amber-300">Deepak Mittal</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
-              <div className="ml-4 lg:ml-8 mr-2">
-                <span className=" text-white">skills:</span>
-                <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">React</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Docker</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
-                <span className="text-gray-400">{"'],"}</span>
+
+              {/* Skills */}
+              <div className="ml-4 lg:ml-8">
+                <span className="mr-2 text-white">skills:</span>
+                <span className="text-gray-400">[</span>
+                <span className="text-amber-300">
+                  React, NextJS, Redux, Express, NestJS, MySql, MongoDB, Docker,
+                  AWS
+                </span>
+                <span className="text-gray-400">],</span>
               </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
+
+              {/* Attributes */}
+              <div className="ml-4 lg:ml-8">
+                <span className="mr-2 text-white">hardWorker:</span>
+                <span className="text-orange-400">true</span>,
               </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
+              <div className="ml-4 lg:ml-8">
+                <span className="mr-2 text-white">quickLearner:</span>
+                <span className="text-orange-400">true</span>,
               </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
+              <div className="ml-4 lg:ml-8">
+                <span className="mr-2 text-white">problemSolver:</span>
+                <span className="text-orange-400">true</span>,
               </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-green-400">hireable:</span>
+
+              {/* Hireable Function */}
+              <div className="ml-4 lg:ml-8">
+                <span className="mr-2 text-green-400">isHireable:</span>
                 <span className="text-orange-400">function</span>
-                <span className="text-gray-400">{'() {'}</span>
+                <span className="text-gray-400">{`() {`}</span>
               </div>
-              <div>
-                <span className="ml-8 lg:ml-16 mr-2 text-orange-400">return</span>
-                <span className="text-gray-400">{`(`}</span>
+              <div className="ml-8 lg:ml-16">
+                <span className="text-orange-400">return</span>
+                <span className="text-gray-400">{` (`}</span>
               </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
+              <div className="ml-12 lg:ml-24">
+                <span className="text-cyan-400">this.</span>
                 <span className="mr-2 text-white">hardWorker</span>
                 <span className="text-amber-300">&amp;&amp;</span>
               </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
+              <div className="ml-12 lg:ml-24">
+                <span className="text-cyan-400">this.</span>
                 <span className="mr-2 text-white">problemSolver</span>
                 <span className="text-amber-300">&amp;&amp;</span>
               </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
+              <div className="ml-12 lg:ml-24">
+                <span className="text-cyan-400">this.</span>
                 <span className="mr-2 text-white">skills.length</span>
                 <span className="mr-2 text-amber-300">&gt;=</span>
                 <span className="text-orange-400">5</span>
               </div>
-              <div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span></div>
-              <div><span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span></div>
-              <div><span className="text-gray-400">{`};`}</span></div>
+              <div className="ml-8 lg:ml-16">
+                <span className="text-gray-400">{")"};</span>
+              </div>
+              <div className="ml-4 lg:ml-8 text-gray-400">{`};`}</div>
+              <div className="text-gray-400">{`};`}</div>
             </code>
           </div>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default HeroSection;
