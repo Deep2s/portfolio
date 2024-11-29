@@ -55,7 +55,7 @@ function Skills() {
                       className="h-full w-auto rounded-lg"
                     />
                   </div>
-                  <p className="text-white text-sm sm:text-lg">
+                  <p className="text-white text-sm sm:text-md">
                     {skill}
                   </p>
                 </div>

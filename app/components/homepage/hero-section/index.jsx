@@ -134,7 +134,7 @@ function HeroSection() {
                 <span className="text-gray-400">[</span>
                 <span className="text-amber-300">
                   React, NextJS, Redux, Express, NestJS, MySql, MongoDB, Docker,
-                  AWS
+                  Ionic, React Native
                 </span>
                 <span className="text-gray-400">],</span>
               </div>

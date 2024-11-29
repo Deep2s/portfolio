@@ -11,10 +11,4 @@ export const experiences = [
     company: "Codeprism Software Pvt. Ltd.",
     duration: "(Jan 2023 - Present)"
   },
-  // {
-  //   id: 3,
-  //   title: "Self Employed",
-  //   company: "Code and build something in everyday.",
-  //   duration: "(Jan 2018 - Present)"
-  // }
 ]

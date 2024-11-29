@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Deepak Mittal",
-  profile: '/profile.png',
+  profile: '/profile.jpg',
   designation: "Software Developer",
   description: "My name is Deepak Mittal, a passionate and dedicated software developer with a strong enthusiasm for programming. I am a quick learner with a self-driven approach to mastering new technologies, and I thrive on solving complex problems. With a deep interest in all aspects of web application development, I am committed to making the web more accessible and dynamic. My expertise lies in JavaScript, and I enjoy leveraging its power to build robust solutions. I am open to exploring job opportunities that align with my skills and interests.",
   email: 'deepakmittald129@gmail.com',

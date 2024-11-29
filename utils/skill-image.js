@@ -72,6 +72,14 @@ import vuetifyjs from '/public/svg/skills/vuetifyjs.svg';
 import webix from '/public/svg/skills/webix.svg';
 import wolframalpha from '/public/svg/skills/wolframalpha.svg';
 import wordpress from '/public/svg/skills/wordpress.svg';
+import reactNative from '/public/svg/skills/react-native.svg';
+import nodeJS from '/public/svg/skills/nodejs.svg';
+import expoRN from '/public/svg/skills/expo-rn.svg';
+import redux from '/public/svg/skills/redux.svg';
+import rxjs from '/public/svg/skills/rxjs.svg';
+import nestJS from '/public/svg/skills/nestjs.svg';
+import capacitor from '/public/svg/skills/capacitor.svg';
+import cordova from '/public/svg/skills/cordova.svg';
 
 
 export const skillsImage = (skill) => {
@@ -225,6 +233,22 @@ export const skillsImage = (skill) => {
       return wolframalpha;
     case 'canva':
       return canva;
+    case 'react-native':
+      return reactNative;
+    case 'nodejs':
+      return nodeJS;
+    case 'expo-rn':
+      return expoRN;
+    case 'redux':
+      return redux;
+    case 'rxjs':
+      return rxjs;
+    case 'nest js':
+      return nestJS;
+    case 'capacitor':
+      return capacitor;
+    case 'cordova':
+      return cordova;
     default:
       break;
   }
