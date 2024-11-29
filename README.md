@@ -59,4 +59,4 @@ To customize the portfolio, you can modify the data in the `utils/data` folder.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-Live Link: https://deepakmittal.vercel.app/
+Live Link: [https://deepakmittal.vercel.app/](https://aiwithdeepak-portfolio.netlify.app/)
