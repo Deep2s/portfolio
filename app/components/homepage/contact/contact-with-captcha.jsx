@@ -1,6 +1,6 @@
 "use client";
 // @flow strict
-import { isValidEmail } from '@/utils/check-email';
+// import { isValidEmail } from '@/utils/check-email';
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
 import { useState } from 'react';
@@ -89,7 +89,7 @@ function ContactWithCaptcha() {
 
           <div className="flex flex-col gap-2">
             <label className="text-base">Your Email: </label>
-            <input
+            {/* <input
               className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
               type="email"
               maxLength="100"
@@ -100,7 +100,7 @@ function ContactWithCaptcha() {
                 checkRequired();
                 setError({ ...error, email: !isValidEmail(input.email) });
               }}
-            />
+            /> */}
             {error.email &&
               <p className="text-sm text-red-400">Please provide a valid email!</p>
             }
