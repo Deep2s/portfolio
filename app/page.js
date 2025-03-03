@@ -7,6 +7,9 @@ import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
 import GraphicDesign from "./components/motion/motion";
+import HoverMotion from "./components/motion/hover-effect";
+import UseAnimationFrame from "./components/motion/cube-motion";
+import DragConstraints from "./components/motion/sqaure-motion";
 
 export default async function Home() {
   return (
@@ -14,6 +17,9 @@ export default async function Home() {
       <HeroSection />
       <AboutSection />
       <GraphicDesign />
+      <HoverMotion />
+      <DragConstraints />
+      {/* <UseAnimationFrame /> */}
       <Experience />
       <Skills />
       <Projects />
